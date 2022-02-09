@@ -1,4 +1,4 @@
-### ⚠️DISCLAIMER⚠️
+### ⚠ DISCLAIMER ⚠
 This project has nothing to do with ANTIxl. That project has been cancelled and this is something completley different.
 
 # IXHell
