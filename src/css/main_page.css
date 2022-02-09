@@ -2,6 +2,17 @@ body {
   background-color: white;
 }
 
+#cover {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
 #header {
   color: #489405;
   font-family: Verdana, sans-serif;
