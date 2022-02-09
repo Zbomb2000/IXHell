@@ -2,10 +2,31 @@
 
 <html lang="en">
   <head>
-    <title>Home - IXHell</title>
+    <title>IXHell | Learn Level A math</title>
+    <link rel="shortcut icon" type="image/png" href="img/icon.png"/>
+    <link rel="stylesheet" href="css/main_page.css">
+    <script>
+      function openError() {
+        window.open("404.html", '_self')
+      }
+    </script>
   </head>
   <body>
-    <p>This page isn't finished.</p>
-    <a href="index.html">Return to warning screen</a>
+    <div id="header">
+      <div id="header_img_div">
+        <a href="404.html">
+          <img id="header_img" src="img/logo.png"/>
+        </a>
+    </div>
+    <div id="login_div">
+      <p>Welcome, User!</p>
+    </div>
+    <div id="subheader">
+      <div id="sub_buttons">
+        <button class="sub_button" type="button" style="color: white">Learning</button>
+        <button class="sub_button" type="button" onclick="openError()">Diagnostic</button>
+        <button class="sub_button" type="button" onclick="openError()">Analytics</button>
+    </div>
+    </div>
   </body>
 </html>

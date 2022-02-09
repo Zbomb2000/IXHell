@@ -1,0 +1,65 @@
+body {
+  background-color: white;
+}
+
+#header {
+  color: #489405;
+  font-family: Verdana, sans-serif;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+#login_div {
+  float: right;
+  padding-right: 125px;
+}
+
+#header_img_div {
+  float: left;
+  padding: 12px;
+  padding-left: 125px;
+}
+
+#header_img {
+  width: 78px;
+  height: 28px;
+}
+
+#subheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clear: both;
+  margin-top: 52px;
+  background-color: #52b700;
+  width: 100%;
+  height: 50px;
+}
+
+#sub_buttons {
+  padding-left: 125px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+
+.sub_button {
+  font-size: 20px;
+  font-family:  'Trebuchet MS', sans-serif;
+  height: 100%;
+  width: 100px;
+  border: none;
+  color: #d0ebba;
+  background-color: #52b700;
+  cursor: pointer;
+}
+
+.sub_button:hover {
+  color: white;
+}
