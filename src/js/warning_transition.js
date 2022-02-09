@@ -9,4 +9,7 @@ function transitionToMain() {
     }, 75);
   }
   document.getElementById('cover').style.opacity = cover_opacity;
+  if (cover_opacity > 1) {
+    window.open('main_page.html', '_self')
+  }
 }
