@@ -13,7 +13,7 @@ This will be the first version of the program to be released.
 #### FEATURES:
  - Really hard
  - Impossible to beat
- - There is only one lesson ***(Level A - A.1: Your worst nightmare)***
+ - There is only one lesson *(Level A - A.1: Your worst nightmare)*
 
 ---
 ### VERSION 1 (unfinished)
@@ -21,7 +21,7 @@ This will be the first full release of the program
 #### FEATURES:
  - Really hard
  - Possible to beat (But really hard)
- - Still only one lesson ***(Level A - A.1: Your worst nightmare)***
+ - Still only one lesson *(Level A - A.1: Your worst nightmare)*
 ---
 
 ## CONTACT INFORMATION
