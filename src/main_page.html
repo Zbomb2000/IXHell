@@ -7,28 +7,35 @@
     <link rel="stylesheet" href="css/main_page.css">
     <script>
       function openError() {
-        window.open("404.html", '_self')
+        window.open("404.html", '_self');
+      }
+      function reloadPage() {
+        window.open("main-page.html", '_self');
       }
     </script>
   </head>
   <body>
     <div id="cover"></div>
     <div id="header">
-      <div id="header_img_div">
+      <div id="header-img-div">
         <a href="404.html">
-          <img id="header_img" src="img/logo.png"/>
+          <img id="header-img" src="img/logo.png"></img>
         </a>
     </div>
-    <div id="login_div">
+    <div id="login-div">
       <p>Welcome, User!</p>
     </div>
     <div id="subheader">
-      <div id="button_padding"></div>
-      <div id="sub_buttons">
-        <button class="sub_button" type="button" style="color: white">Learning</button>
-        <button class="sub_button" type="button" onclick="openError()">Diagnostic</button>
-        <button class="sub_button" type="button" onclick="openError()">Analytics</button>
+      <div id="button-padding"></div>
+      <div id="sub-buttons">
+        <button class="sub-button" type="button" style="color: white" onclick="reloadPage()">Learning</button>
+        <button class="sub-button" type="button" onclick="openError()">Diagnostic</button>
+        <button class="sub-button" type="button" onclick="openError()">Analytics</button>
     </div>
+    </div>
+    <div id="sub-subheader">
+      <button type="button" id="math-button" onclick="reloadPage()"><img src="img/math-icon.png"></img></button>
+      <button type="button" id="recommendations-button" onclick="reloadPage()"><img src="img/recommendations-icon.png"></img></button>
     </div>
     <script src="js/main_page.js"></script>
   </body>

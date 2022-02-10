@@ -24,18 +24,18 @@ body {
   background-color: white;
 }
 
-#login_div {
+#login-div {
   float: right;
   padding-right: 125px;
 }
 
-#header_img_div {
+#header-img-div {
   float: left;
   padding: 12px;
   padding-left: 125px;
 }
 
-#header_img {
+#header-img {
   width: 78px;
   height: 28px;
 }
@@ -51,7 +51,7 @@ body {
   height: 50px;
 }
 
-#sub_buttons {
+#sub-buttons {
   position: relative;
   top: 0;
   left: 0;
@@ -59,13 +59,13 @@ body {
   height: 100%
 }
 
-#button_padding {
+#button-padding {
   float: left;
   height: 100%;
   width: 125px;
 }
 
-.sub_button {
+.sub-button {
   font-size: 20px;
   font-family:  'Trebuchet MS', sans-serif;
   height: 100%;
@@ -76,6 +76,25 @@ body {
   cursor: pointer;
 }
 
-.sub_button:hover {
+.sub-button:hover {
   color: white;
+}
+
+#sub-subheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clear: both;
+  margin-top: 52px;
+  background-color: #52b700;
+  width: 100%;
+  height: 50px;
+}
+
+#math-button {
+
+}
+
+#recommendations-button {
+
 }
