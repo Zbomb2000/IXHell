@@ -12,4 +12,4 @@ function onOpen() {
   }
 }
 
-onOpen()
+onOpen();
