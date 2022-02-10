@@ -29,7 +29,7 @@ body {
   padding-right: 125px;
 }
 
-#-div {
+#header-img-div {
   float: left;
   padding: 12px;
   padding-left: 125px;
@@ -85,16 +85,34 @@ body {
   top: 0;
   left: 0;
   clear: both;
-  margin-top: 52px;
-  background-color: #52b700;
+  margin-top: 102px;
+  background-color: black;
   width: 100%;
-  height: 50px;
+  height: 60px;
 }
 
 #math-button {
+  float: right;
+  background-color: white;
+  border: none;
+  width: 50%;
+  cursor: pointer;
+}
 
+#math-button:hover {
+  transition: opacity 0.20s;
+  opacity: 0.75;
 }
 
 #recommendations-button {
+  float; left;
+  background-color: white;
+  border: none;
+  width: 50%;
+  cursor: pointer;
+}
 
+#recommendations-button:hover {
+  transition: opacity 0.20s;
+  opacity: 0.75;
 }

@@ -10,7 +10,7 @@
         window.open("404.html", '_self');
       }
       function reloadPage() {
-        window.open("main-page.html", '_self');
+        window.open("main_page.html", '_self');
       }
     </script>
   </head>
@@ -34,8 +34,8 @@
     </div>
     </div>
     <div id="sub-subheader">
-      <button type="button" id="math-button" onclick="reloadPage()"><img src="img/math-icon.png"></img></button>
-      <button type="button" id="recommendations-button" onclick="reloadPage()"><img src="img/recommendations-icon.png"></img></button>
+      <div id="math-button-background"><button type="button" id="math-button" onclick="reloadPage()"><img id="subsubheader-button" src="img/math_icon.png"></img></button></div>
+      <div id="math-button-background"><button type="button" id="recommendations-button" onclick="openError()"><img id="subsubheader-button" src="img/recommendations_icon.png"></img></button></div>
     </div>
     <script src="js/main_page.js"></script>
   </body>
