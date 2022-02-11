@@ -1,5 +1,8 @@
 body {
-  background-color: white;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 #cover {
@@ -110,6 +113,8 @@ body {
   float; left;
   background-color: white;
   border: none;
+  border-bottom: 3px solid;
+  border-color: white;
   width: 50%;
   cursor: pointer;
 }
@@ -117,4 +122,43 @@ body {
 #recommendations-button:hover {
   transition: opacity 0.20s;
   opacity: 0.75;
+}
+
+#main-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  margin-top: 167px;
+  background-color: white;
+}
+
+#title-header {
+  font-family: "Trebuchet MS",sans-serif;
+  color: #eabc00;
+  padding-left: 30px;
+}
+
+#desc-p {
+  color: #545454;
+  font: 15px Verdana;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#footer {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  font-family: arial;
+  background-color: #c9c9c9;
+  z-index: 1;
+  height: 200px;
+  width: 100%;
+  left: 0;
+}
+
+.footer-content {
+  padding: 10px;
 }
