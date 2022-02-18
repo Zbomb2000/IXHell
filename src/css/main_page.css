@@ -1,0 +1,172 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#cover {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+#header {
+  color: #489405;
+  font-family: Verdana, sans-serif;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+#login-div {
+  float: right;
+  padding-right: 125px;
+}
+
+#header-img-div {
+  float: left;
+  padding: 12px;
+  padding-left: 125px;
+}
+
+#header-img {
+  width: 78px;
+  height: 28px;
+}
+
+#subheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clear: both;
+  margin-top: 52px;
+  background-color: #52b700;
+  width: 100%;
+  height: 50px;
+}
+
+#sub-buttons {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+
+#button-padding {
+  float: left;
+  height: 100%;
+  width: 125px;
+}
+
+.sub-button {
+  font-size: 20px;
+  font-family:  'Trebuchet MS', sans-serif;
+  height: 100%;
+  width: 100px;
+  border: none;
+  color: #d0ebba;
+  background-color: #52b700;
+  cursor: pointer;
+}
+
+.sub-button:hover {
+  color: white;
+}
+
+#sub-subheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clear: both;
+  margin-top: 102px;
+  background-color: black;
+  width: 100%;
+  height: 60px;
+}
+
+#math-button {
+  float: right;
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid;
+  border-color: #00a1ff;
+  width: 50%;
+  cursor: pointer;
+}
+
+#math-button:hover {
+  transition: opacity 0.20s;
+  opacity: 0.75;
+}
+
+#recommendations-button {
+  float; left;
+  background-color: white;
+  border: none;
+  border-bottom: 3px solid;
+  border-color: white;
+  width: 50%;
+  cursor: pointer;
+}
+
+#recommendations-button:hover {
+  transition: opacity 0.20s;
+  opacity: 0.75;
+}
+
+#main-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  margin-top: 167px;
+  background-color: white;
+}
+
+#title-header {
+  font-family: "Trebuchet MS",sans-serif;
+  color: #eabc00;
+  padding-left: 30px;
+}
+
+#desc-p {
+  color: #545454;
+  font: 15px Verdana;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#lesson-a {
+  font-family: "Trebuchet MS",sans-serif;
+  padding-left: 60px;
+  padding-top: 10px;
+}
+
+/* footer */
+
+#footer {
+  position: absolute;
+  top: 0;
+  font-family: arial;
+  background-color: #c9c9c9;
+  z-index: 1;
+  height: 200px;
+  width: 100%;
+  left: 0;
+  margin-top: 800px;
+}
+
+.footer-content {
+  padding: 10px;
+}
