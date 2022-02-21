@@ -1,27 +1,30 @@
-// Sends console messages
+/**
+ * Made by me (github.com/Zbomb2000)
+ * This script loads the questions onto the html page
+ * Licensed under the Mozilla Public License Version 2.0
+ * More license information here: "https://www.mozilla.org/en-US/MPL/2.0/"
+*/
+
 console.log("I recommend not using the console to cheat.");
 console.log("It makes the program not fun.");
 console.log("That's pretty much it.");
 
-// THIS IS REALLY IMPORTANT. IT LOADS THE LESSON DATA FROM THE JSON FILE
-var lesson_data = window.lesson_dataa;
+// Load json
+var json_lesson_data = window.lesson_data;
 
-// Creates variables
-var display_text = "";
+function setQuestion(ld) {
+  var display_text = "";
 
-function testJsonStuff(ld) {
-  // Gets data
-  var q1 = ld["q_one"];
+  // Gets data from json dictionary
+  var question_info = ld["q_one"];
 
-  // Gets important number
-  if (q1[1] == true) {
-    display_text = q1[3];
+  if (question_info[1] == true) {
+    display_text = question_info[3];
   } else {
-    display_text = q1[2];
+    display_text = question_info[2];
   }
 
-  // Displays question
   document.getElementById("question-box").innerHTML = display_text;
 }
 
-testJsonStuff(lesson_data);
+setQuestion(lesson_data);
