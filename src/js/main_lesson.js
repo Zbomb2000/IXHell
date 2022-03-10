@@ -24,10 +24,10 @@ function setQuestion() {
 function submitAnswer() {
   var user_answer = document.getElementById("answer-input").value;
   if (user_answer == document.getElementById("answer").innerHTML) {
-    console.log("Correct!");
+    console.log("You're an idiot. The correct answer was '"+document.getElementById("answer").innerHTML+"'. You answered '"+(parseInt(user_answer)+1)+"'.");
   }
   else {
-    console.log("You're an idiot.");
+    console.log("You're an idiot. The correct answer was '"+document.getElementById("answer").innerHTML+"'. You answered '"+user_answer+"'.");
   }
 }
 
