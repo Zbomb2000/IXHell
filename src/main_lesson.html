@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="css/main_lesson.css">
   </head>
   <body>
-    <h1 id="question-box">this should change on open</h1>
+    <h1>1. <span id="num1"></span> + <span id="num2"></span> = ?</h1>
+    <input id="answer-input" type="text">
+    <button id="submit" onclick="submitAnswer()">Submit</button>
     <a href="main_page.html">RETURN TO MAIN PAGE</a>
-    <script type="text/javascript" src="json/lesson_data_store.json"></script>
+    <p style="color: white;" id="answer"></p>
     <script type="text/javascript" src="js/main_lesson.js"></script>
   </body>
 </html>
