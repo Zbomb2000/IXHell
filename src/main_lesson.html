@@ -6,11 +6,17 @@
     <link rel="stylesheet" href="css/main_lesson.css">
   </head>
   <body>
-    <h1>1. <span id="num1"></span> + <span id="num2"></span> = ?</h1>
-    <input id="answer-input" type="text">
-    <button id="submit" onclick="submitAnswer()">Submit</button>
-    <a href="main_page.html">RETURN TO MAIN PAGE</a>
-    <p style="color: white;" id="answer"></p>
+    <div id="question-div">
+      <h1>1. <span id="num1"></span> + <span id="num2"></span> = ?</h1>
+      <input id="answer-input" type="text">
+      <button id="submit" onclick="submitAnswer()">Submit</button>
+      <a href="main_page.html">RETURN TO MAIN PAGE</a>
+      <p style="color: white;" id="answer"></p>
+    </div>
+    <div id="incorrect-div">
+      <h1 id="incorrect-header">You're an idiot...</h1>
+      <h3 id="message-thing">----</h3>
+    </div>
     <script type="text/javascript" src="js/main_lesson.js"></script>
   </body>
 </html>

@@ -9,7 +9,22 @@ console.log("I recommend not using the console to cheat.");
 console.log("It makes it not fun.");
 console.log("That's pretty much it.");
 
-var answer_var;
+
+function randomizeHeader() {
+  var random_var = Math.floor(Math.random() * 5);
+  if (random_var == 1) {
+    return "You're an idiot...";
+  }
+  if (random_var == 2) {
+    return "Get smarter...";
+  }
+  if (random_var == 3) {
+    return "Wrong...";
+  }
+  if (random_var == 4) {
+    return "This is why your parents don't love you...";
+  }
+}
 
 function setQuestion() {
   var num1 = Math.floor(Math.random() * 100);
@@ -22,12 +37,16 @@ function setQuestion() {
 }
 
 function submitAnswer() {
+  var answer = document.getElementById("answer").innerHTML;
   var user_answer = document.getElementById("answer-input").value;
-  if (user_answer == document.getElementById("answer").innerHTML) {
-    console.log("You're an idiot. The correct answer was '"+document.getElementById("answer").innerHTML+"'. You answered '"+(parseInt(user_answer)+1)+"'.");
+  var incorrect_text = document.getElementById("message-thing");
+
+  document.getElementById("incorrect-header").innerHTML = randomizeHeader();
+  if (user_answer == answer) {
+    incorrect_text.innerHTML = "The correct answer was '"+answer+"'. You answered '"+(parseInt(user_answer)+1)+"'.";
   }
   else {
-    console.log("You're an idiot. The correct answer was '"+document.getElementById("answer").innerHTML+"'. You answered '"+user_answer+"'.");
+    incorrect_text.innerHTML = "The correct answer was '"+answer+"'. You answered '"+user_answer+"'.";
   }
 }
 
