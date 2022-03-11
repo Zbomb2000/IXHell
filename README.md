@@ -8,12 +8,12 @@ IXHell is an exaggerated version of IXL. If you somehow get a question right, it
 This is information about current/future releases of this program.
 
 ---
-### VERSION 0.1 (Unfinished) [pre-release]
+### VERSION 0.1 [pre-release]
 This will be the first version of the program to be released.
 #### FEATURES:
- - Really hard
  - Impossible to beat
  - There is only one lesson *(Level A - A.1: Your worst nightmare)*
+ - There is only also addition, and barley any styling for the actual lesson page
 
 ---
 ### VERSION 1 (unfinished)
