@@ -13,7 +13,7 @@ This will be the first version of the program to be released.
 #### FEATURES:
  - Impossible to beat
  - There is only one lesson *(Level A - A.1: Your worst nightmare)*
- - There is only also addition, and barley any styling for the actual lesson page
+ - There is only addition in the lesson, and barley any styling
 
 ---
 ### VERSION 1 (unfinished)
@@ -23,6 +23,10 @@ This will be the first full release of the program
  - Possible to beat (But really hard)
  - Still only one lesson *(Level A - A.1: Your worst nightmare)*
 ---
+
+## LINKS
+ - goodergames.github.io repo - https://github.com/gooderprojects/gooderprojects.github.io
+ - goodergames website - https://goodergames.github.io
 
 ## CONTACT INFORMATION
 You can email me at hxl9500@gmail.com. (That's pretty much it.)
