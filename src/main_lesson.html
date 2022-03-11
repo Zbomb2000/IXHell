@@ -7,15 +7,16 @@
   </head>
   <body>
     <div id="question-div">
-      <h1>1. <span id="num1"></span> + <span id="num2"></span> = ?</h1>
+      <h1><span id="num1"></span> + <span id="num2"></span> = ?</h1>
       <input id="answer-input" type="text">
       <button id="submit" onclick="submitAnswer()">Submit</button>
-      <a href="main_page.html">RETURN TO MAIN PAGE</a>
       <p style="color: white;" id="answer"></p>
+      <a href="main_page.html">RETURN TO MAIN PAGE</a>
     </div>
     <div id="incorrect-div">
       <h1 id="incorrect-header">You're an idiot...</h1>
       <h3 id="message-thing">----</h3>
+      <button onclick="window.location.reload();">Next question</button>
     </div>
     <script type="text/javascript" src="js/main_lesson.js"></script>
   </body>
