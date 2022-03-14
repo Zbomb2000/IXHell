@@ -9,6 +9,13 @@ console.log("I recommend not using the console to cheat.");
 console.log("It makes it not fun.");
 console.log("That's pretty much it.");
 
+qnum_cookie = checkCookie(getCookie("question_number"));
+if (!qnum_cookie) {
+  document.cookie = "question_number=0";
+}
+console.log(qnum_cookie);
+console.log(getCookie("question_number"));
+
 function setQuestion(question_number) {
   var num1 = Math.floor(Math.random() * 11);
   var num2 = Math.floor(Math.random() * 11);
@@ -21,7 +28,7 @@ function setQuestion(question_number) {
   document.getElementById("questions-answered").innerHTML = question_number;
 }
 
-function submitAnswer(question_number) {
+function submitAnswer() {
   var answer = document.getElementById("answer").innerHTML;
   var user_answer = document.getElementById("answer-input").value;
   var incorrect_text = document.getElementById("message-thing");
@@ -36,6 +43,7 @@ function submitAnswer(question_number) {
   }
   frame2.style.zIndex = "4";
 
+  question_number = getCookie("question_number");
   question_number = parseInt(question_number) + 1;
   setCookie("question_number", question_number);
 }

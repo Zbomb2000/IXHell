@@ -1,3 +1,15 @@
+function checkCookie(value) {
+  if (value == "NaN") {
+    return false;
+  }
+  else if (value == null) {
+    return false;
+  }
+  else {
+    return true;
+  }
+}
+
 function getCookie(name) {
     // Split cookie string and get all individual name=value pairs in an array
     var cookieArr = document.cookie.split(";");
