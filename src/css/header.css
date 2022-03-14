@@ -1,0 +1,107 @@
+#header {
+  color: #489405;
+  font-family: Verdana, sans-serif;
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+#login-div {
+  float: right;
+  padding-right: 125px;
+}
+
+#header-img-div {
+  float: left;
+  padding: 12px;
+  padding-left: 125px;
+}
+
+#header-img {
+  width: 78px;
+  height: 28px;
+}
+
+#subheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clear: both;
+  margin-top: 52px;
+  background-color: #52b700;
+  width: 100%;
+  height: 50px;
+}
+
+#sub-buttons {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+
+#button-padding {
+  float: left;
+  height: 100%;
+  width: 125px;
+}
+
+.sub-button {
+  font-size: 20px;
+  font-family:  'Trebuchet MS', sans-serif;
+  height: 100%;
+  width: 100px;
+  border: none;
+  color: #d0ebba;
+  background-color: #52b700;
+  cursor: pointer;
+}
+
+.sub-button:hover {
+  color: white;
+}
+
+#sub-subheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clear: both;
+  margin-top: 102px;
+  background-color: black;
+  width: 100%;
+  height: 60px;
+}
+
+#math-button {
+  float: right;
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid;
+  border-color: #00a1ff;
+  width: 50%;
+  cursor: pointer;
+}
+
+#math-button:hover {
+  transition: opacity 0.20s;
+  opacity: 0.75;
+}
+
+#recommendations-button {
+  float; left;
+  background-color: white;
+  border: none;
+  border-bottom: 3px solid;
+  border-color: white;
+  width: 50%;
+  cursor: pointer;
+}
+
+#recommendations-button:hover {
+  transition: opacity 0.20s;
+  opacity: 0.75;
+}
