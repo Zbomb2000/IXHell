@@ -4,20 +4,49 @@
   <head>
     <title>IXHell | Your worst nightmare | Level A Math</title>
     <link rel="stylesheet" href="css/main_lesson.css">
+    <link rel="stylesheet" href="css/header.css">
   </head>
   <body>
-    <div id="question-div">
-      <h1><span id="question_number">-</span>. <span id="num1">-</span> + <span id="num2">-</span> = ?</h1>
-      <input id="answer-input" type="text">
-      <button id="submit" onclick="submitAnswer()">Submit</button>
-      <p style="color: white;" id="answer"></p>
-      <a href="main_page.html">RETURN TO MAIN PAGE</a>
+    <!-- header -->
+    <div id="header">
+      <div id="header-img-div">
+        <a href="404.html">
+          <img id="header-img" src="img/logo.png"></img>
+        </a>
     </div>
-    <div id="incorrect-div">
-      <h1 id="incorrect-header">You're an idiot...</h1>
-      <h3 id="message-thing">----</h3>
-      <button onclick="window.location.reload();">Next question</button>
+    <div id="login-div">
+      <p>Welcome, User!</p>
     </div>
+    <div id="subheader">
+      <div id="button-padding"></div>
+      <div id="sub-buttons">
+        <button class="sub-button" type="button" style="color: white" onclick="reloadPage()">Learning</button>
+        <button class="sub-button" type="button" onclick="openError()">Diagnostic</button>
+        <button class="sub-button" type="button" onclick="openError()">Analytics</button>
+      </div>
+    </div>
+      <div id="sub-subheader">
+        <div id="math-button-background"><button type="button" id="math-button" onclick="reloadPage()"><img id="subsubheader-button" src="img/math_icon.png"></img></button></div>
+        <div id="math-button-background"><button type="button" id="recommendations-button" onclick="openError()"><img id="subsubheader-button" src="img/recommendations_icon.png"></img></button></div>
+      </div>
+    </div>
+
+    <!-- main -->
+    <div id="main-div">
+      <div id="question-div">
+        <h1><span id="question_number">-</span>. <span id="num1">-</span> + <span id="num2">-</span> = ?</h1>
+        <input id="answer-input" type="text">
+        <button id="submit" onclick="submitAnswer()">Submit</button>
+        <p style="color: white;" id="answer"></p>
+        <a href="main_page.html">RETURN TO MAIN PAGE</a>
+      </div>
+      <div id="incorrect-div">
+        <h1 id="incorrect-header">You're an idiot...</h1>
+        <h3 id="message-thing">----</h3>
+        <button onclick="window.location.reload();">Next question</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/random_header.js"></script>
     <script type="text/javascript" src="js/main_lesson.js"></script>
   </body>
 </html>

@@ -4,12 +4,23 @@ body {
   color: black;
 }
 
+#main-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  margin-top: 167px;
+  background-color: white;
+}
+
 #question-div {
   width: 100%;
   height: 100%;
   z-index: 1;
   position: absolute;
   background-color: white;
+  padding-left: 10px;
 }
 
 #incorrect-div {
