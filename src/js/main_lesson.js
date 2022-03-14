@@ -13,8 +13,6 @@ qnum_cookie = checkCookie(getCookie("question_number"));
 if (!qnum_cookie) {
   document.cookie = "question_number=0";
 }
-console.log(qnum_cookie);
-console.log(getCookie("question_number"));
 
 function setQuestion(question_number) {
   var num1 = Math.floor(Math.random() * 11);
@@ -24,7 +22,6 @@ function setQuestion(question_number) {
   document.getElementById("num1").innerHTML = num1;
   document.getElementById("num2").innerHTML = num2;
   document.getElementById("answer").innerHTML = answer;
-  document.getElementById("question_number").innerHTML = question_number;
   document.getElementById("questions-answered").innerHTML = question_number;
 }
 
