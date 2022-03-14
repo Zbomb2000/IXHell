@@ -3,10 +3,11 @@
 <html lang="en">
   <head>
     <title>IXHell | Your worst nightmare | Level A Math</title>
-    <link rel="stylesheet" href="css/main_lesson.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main_lesson.css">
+    <script type="text/javascript" src="js/manageCookies.js"></script>
   </head>
-  <body>
+  <body id="body">
     <!-- header -->
     <div id="header">
       <div id="header-img-div">
@@ -34,11 +35,21 @@
     <!-- main -->
     <div id="main-div">
       <div id="question-div">
-        <h1><span id="question_number">-</span>. <span id="num1">-</span> + <span id="num2">-</span> = ?</h1>
-        <input id="answer-input" type="text">
-        <button id="submit" onclick="submitAnswer()">Submit</button>
-        <p style="color: white;" id="answer"></p>
-        <a href="main_page.html">RETURN TO MAIN PAGE</a>
+        <div id="answer-div">
+          <h1><span id="question_number">-</span>. <span id="num1">-</span> + <span id="num2">-</span> = ?</h1>
+          <input id="answer-input" type="text">
+          <button id="submit" onclick="submitAnswer()">Submit</button>
+          <p style="color: white;" id="answer"></p>
+          <a href="main_page.html">RETURN TO MAIN PAGE</a>
+        </div>
+        <div id="stats-div">
+          <div id="questions-answered-top">
+            <p>Questions answered</p>
+          </div>
+          <div id="questions-answered-bottom">
+            <h3 id="questions-answered">0</h3>
+          </div>
+        </div>
       </div>
       <div id="incorrect-div">
         <h1 id="incorrect-header">You're an idiot...</h1>
@@ -46,6 +57,7 @@
         <button onclick="window.location.reload();">Next question</button>
       </div>
     </div>
+
     <script type="text/javascript" src="js/random_header.js"></script>
     <script type="text/javascript" src="js/main_lesson.js"></script>
   </body>
