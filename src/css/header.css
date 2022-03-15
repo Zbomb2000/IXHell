@@ -73,7 +73,7 @@
   margin-top: 102px;
   background-color: black;
   width: 100%;
-  height: 60px;
+  height: 45px;
 }
 
 #math-button {
@@ -92,7 +92,7 @@
 }
 
 #recommendations-button {
-  float; left;
+  float: left;
   background-color: white;
   border: none;
   border-bottom: 3px solid;
@@ -104,4 +104,29 @@
 #recommendations-button:hover {
   transition: opacity 0.20s;
   opacity: 0.75;
+}
+
+#subsubheader-img1 {
+  width: 40px;
+}
+
+#subsubheader-img2 {
+  width: 100px;
+}
+
+#lesson-title-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  margin-top: 150px;
+  z-index: 5;
+  background-color: #f4f8fa;
+  font-size: 15px;
+}
+
+.lesson-title-text {
+  color: gray;
+  font: 12px Verdana, sans-serif;
 }

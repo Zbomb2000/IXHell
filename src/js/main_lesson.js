@@ -9,16 +9,20 @@ console.log("I recommend not using the console to cheat.");
 console.log("It makes it not fun.");
 console.log("That's pretty much it.");
 
-function setQuestion() {
+qnum_save = localStorage.getItem("question_num");
+if (qnum_save == null) {
+  localStorage.setItem("question_num", 0);
+}
+
+function setQuestion(question_number) {
   var num1 = Math.floor(Math.random() * 11);
   var num2 = Math.floor(Math.random() * 11);
   var answer = num1 + num2;
-  var question_number = Math.floor(Math.random() * 100);
 
   document.getElementById("num1").innerHTML = num1;
   document.getElementById("num2").innerHTML = num2;
   document.getElementById("answer").innerHTML = answer;
-  document.getElementById("question_number").innerHTML = question_number;
+  document.getElementById("questions-answered").innerHTML = question_number;
 }
 
 function submitAnswer() {
@@ -35,6 +39,10 @@ function submitAnswer() {
     incorrect_text.innerHTML = "The correct answer was '"+answer+"'. You answered '"+user_answer+"'.";
   }
   frame2.style.zIndex = "4";
+
+  question_number = localStorage.getItem("question_num");
+  question_number = parseInt(question_number) + 1;
+  localStorage.setItem('question_num', question_number);
 }
 
 // Click submit when enter is clicked
@@ -47,4 +55,5 @@ input.addEventListener("keyup", function(event) {
 });
 
 
-setQuestion();
+setQuestion(localStorage.getItem("question_num"));
+document.getElementById("body").style.display = "inline";
