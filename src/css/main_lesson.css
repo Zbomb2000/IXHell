@@ -15,7 +15,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  margin-top: 167px;
+  margin-top: 200px;
   background-color: white;
 }
 
@@ -63,6 +63,22 @@ body {
   z-index: 0;
   position: absolute;
   background-color: white;
+}
+
+#lesson-title-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  margin-top: 160px;
+  z-index: 5;
+  background-color: #f4f8fa;
+  font-size: 15px;
+}
+
+.lesson-title-text {
+  color: gray;
 }
 
 #incorrect-div-content {
