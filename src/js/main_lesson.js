@@ -9,9 +9,9 @@ console.log("I recommend not using the console to cheat.");
 console.log("It makes it not fun.");
 console.log("That's pretty much it.");
 
-qnum_cookie = checkCookie(getCookie("question_number"));
-if (!qnum_cookie) {
-  document.cookie = "question_number=0";
+qnum_save = localStorage.getItem("question_num");
+if (qnum_save == null) {
+  localStorage.setItem("question_num", 0);
 }
 
 function setQuestion(question_number) {
@@ -40,9 +40,9 @@ function submitAnswer() {
   }
   frame2.style.zIndex = "4";
 
-  question_number = getCookie("question_number");
+  question_number = localStorage.getItem("question_num");
   question_number = parseInt(question_number) + 1;
-  setCookie("question_number", question_number);
+  localStorage.setItem('question_num', question_number);
 }
 
 // Click submit when enter is clicked
@@ -55,5 +55,5 @@ input.addEventListener("keyup", function(event) {
 });
 
 
-setQuestion(getCookie("question_number"));
+setQuestion(localStorage.getItem("question_num"));
 document.getElementById("body").style.display = "inline";
