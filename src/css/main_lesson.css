@@ -76,9 +76,24 @@ body {
   border: 1px solid #A7A6AA;
   padding: 1px;
   width: 30px;
+  outline-color: #009aef;
+}
+
+#answer-input:focus {
+  box-shadow: 0px 0px 5px 2px #b8ebfd
 }
 
 #submit {
+  background-color: #69c130;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  width: 135px;
+  height: 33px;
+  font: 15px Verdana, arial, helvetica, clean, sans-serif;
+}
+
+#next-button {
   background-color: #69c130;
   color: white;
   border: none;
