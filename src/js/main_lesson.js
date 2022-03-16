@@ -43,6 +43,7 @@ function submitAnswer() {
   question_number = localStorage.getItem("question_num");
   question_number = parseInt(question_number) + 1;
   localStorage.setItem('question_num', question_number);
+  document.getElementById('submit').disabled = "disabled";
 }
 
 // Click submit when enter is clicked

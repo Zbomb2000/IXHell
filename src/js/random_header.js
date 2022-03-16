@@ -1,5 +1,5 @@
 function randomizeHeader() {
-  var random_var = Math.floor(Math.random() * 16);
+  var random_var = Math.floor(Math.random() * 12);
   if (random_var == 1) {
     return "You're an idiot...";
   } else if (random_var == 0) {
@@ -14,21 +14,15 @@ function randomizeHeader() {
     return "You're a monkey, right?";
   } else if (random_var == 6) {
     return "I can feel the unintellegence radiating from you..";
-  } else if (random_var == 7) {
-    return "A word to describe you is 'idiotic'...";
-  } else if (random_var == 8) {
-    return "A word to describe you is 'unintellegent'...";
-  } else if (random_var == 9) {
-    return "A word to describe you is 'ignorant'...";
   } else if (random_var == 10) {
     return "I'm going to act like you didn't get that wrong...";
-  } else if (random_var == 11) {
+  } else if (random_var == 7) {
     return "Small children could do better than you...";
-  } else if (random_var == 12) {
+  } else if (random_var == 8) {
     return "Have you considered professional counseling?";
-  } else if (random_var == 13) {
+  } else if (random_var == 11) {
     return "Have you considered returning to preschool?";
-  } else if (random_var == 14) {
+  } else if (random_var == 9) {
     return "I'm assuming you're not trying...";
   } else {
     return "This is why your parents don't love you...";
