@@ -15,7 +15,15 @@ This is the first version of the program to be released. It is pretty bad and th
  - There is only one lesson *(Level A - A.1: Your worst nightmare)*
  - There is only addition in the lesson, and barley any styling
 ---
-### VERSION 0.5 (unfinished)
+### VERSION 0.2 [pre-release] (unfinished)
+I'm probably releasing this version in the next few days.
+#### FEATURES:
+ - Same as version 1, except better styles
+ - I also changed the lesson name to 'Addition'
+ - That's it
+
+---
+### VERSION 0.5 [pre-release] (unfinished)
 This version will have a smart score, subtraction, better styling, and cookies to save your progress.
 #### FEATURES:
  - Impossible to beat
