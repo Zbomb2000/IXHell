@@ -5,15 +5,8 @@ This project has nothing to do with ANTIxl. That project has been cancelled and 
 IXHell is an exaggerated version of IXL. If you somehow get a question right, it will find a dumb way to count it wrong. If you get a question wrong, you will have to answer about 10 more questions to get back to where you were. There isn't really any difference between this and IXL. That's pretty much it.
 
 ## RELEASE INFORMATION
-This is information about current/future releases of this program.
+This is information about current/future releases of this program. This only has the most recent versions. A full list of versions can be found in 'Updates.md'.
 
----
-### VERSION 0.1 [pre-release]
-This is the first version of the program to be released. It is pretty bad and ther will be a lot of work between this version and the next one.
-#### FEATURES:
- - Impossible to beat
- - There is only one lesson *(Level A - A.1: Your worst nightmare)*
- - There is only addition in the lesson, and barley any styling
 ---
 ### VERSION 0.5 (unfinished)
 This version will have a smart score, subtraction, better styling, and cookies to save your progress.

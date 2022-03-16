@@ -23,13 +23,12 @@ body {
 
 #header-img-div {
   float: left;
-  padding: 12px;
+  padding-top: 6px;
   padding-left: 125px;
 }
 
 #header-img {
-  width: 78px;
-  height: 28px;
+  width: 150px;
 }
 
 #subheader {
