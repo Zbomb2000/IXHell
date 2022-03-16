@@ -1,10 +1,3 @@
-body {
-  background-color: black;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
 #header {
   color: #489405;
   font-family: Verdana, sans-serif;
@@ -79,7 +72,7 @@ body {
   margin-top: 102px;
   background-color: black;
   width: 100%;
-  height: 60px;
+  height: 45px;
 }
 
 #math-button {
@@ -112,60 +105,27 @@ body {
   opacity: 0.75;
 }
 
-#cover {
-  position: absolute;
-  z-index: 1000;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  top: 0;
-  left: 0;
-  opacity: 1;
+#subsubheader-img1 {
+  width: 40px;
 }
 
-#main-div {
+#subsubheader-img2 {
+  width: 100px;
+}
+
+#lesson-title-div {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100%;
-  margin-top: 167px;
-  background-color: white;
+  height: 40px;
+  margin-top: 150px;
+  z-index: 5;
+  background-color: #f4f8fa;
+  font-size: 15px;
 }
 
-#title-header {
-  font-family: "Trebuchet MS",sans-serif;
-  color: #eabc00;
-  padding-left: 30px;
-}
-
-#desc-p {
-  color: #545454;
-  font: 15px Verdana;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-#lesson-a {
-  font-family: "Trebuchet MS",sans-serif;
-  padding-left: 60px;
-  padding-top: 10px;
-}
-
-/* footer */
-
-#footer {
-  position: absolute;
-  top: 0;
-  font-family: arial;
-  background-color: #c9c9c9;
-  z-index: 1;
-  height: 200px;
-  width: 100%;
-  left: 0;
-  margin-top: 800px;
-}
-
-.footer-content {
-  padding: 10px;
+.lesson-title-text {
+  color: gray;
+  font: 12px Verdana, sans-serif;
 }

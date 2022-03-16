@@ -2,6 +2,21 @@ body {
   background-color: white;
   font-family: arial;
   color: black;
+  display: none;
+}
+
+#header {
+  z-index: 1000;
+}
+
+#main-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 200px;
+  background-color: white;
 }
 
 #question-div {
@@ -9,7 +24,40 @@ body {
   height: 100%;
   z-index: 1;
   position: absolute;
+  top: 0;
+  left: 0;
   background-color: white;
+}
+
+#answer-div {
+  padding-left: 200px;
+  padding-top: 25px;
+  float: left;
+  font: 20px/1.4 'IXL Verdana', Verdana, Arial, Helvetica, sans-serif;
+}
+
+#stats-div {
+  background-color: #f5f5f5;
+  width: 100px;
+  margin-top: 50px;
+  float: right;
+  margin-right: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#questions-answered-top {
+  background-color: #00c8ff;
+  color: white;
+  margin-top: -16px;
+  height: 50px;
+}
+
+#questions-answered-bottom {
+  font-weight: bold;
+  color: #777368;
+  font-size: 30px;
+  height: 75px;
 }
 
 #incorrect-div {
@@ -18,4 +66,47 @@ body {
   z-index: 0;
   position: absolute;
   background-color: white;
+}
+
+#incorrect-div-content {
+  padding-left: 20px;
+}
+
+#answer-input {
+  border: 1px solid #A7A6AA;
+  padding: 1px;
+  width: 30px;
+  outline-color: #009aef;
+}
+
+#answer-input:focus {
+  box-shadow: 0px 0px 5px 2px #b8ebfd
+}
+
+#submit {
+  background-color: #69c130;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  width: 135px;
+  height: 33px;
+  font: 15px Verdana, arial, helvetica, clean, sans-serif;
+}
+
+#next-button {
+  background-color: #69c130;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  width: 135px;
+  height: 33px;
+  font: 15px Verdana, arial, helvetica, clean, sans-serif;
+}
+
+#lesson-title-link {
+  text-decoration: none;
+}
+
+#lesson-title-link:hover {
+  text-decoration: underline;
 }

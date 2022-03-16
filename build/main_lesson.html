@@ -2,22 +2,70 @@
 
 <html lang="en">
   <head>
-    <title>IXHell | Your worst nightmare | Level A Math</title>
+    <title>IXHell | Addition | Level A Math</title>
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main_lesson.css">
+    <script type="text/javascript" src="js/manageCookies.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
   </head>
-  <body>
-    <div id="question-div">
-      <h1><span id="question_number">-</span>. <span id="num1">-</span> + <span id="num2">-</span> = ?</h1>
-      <input id="answer-input" type="text">
-      <button id="submit" onclick="submitAnswer()">Submit</button>
-      <p style="color: white;" id="answer"></p>
-      <a href="main_page.html">RETURN TO MAIN PAGE</a>
+  <body id="body">
+    <!-- header -->
+    <div id="header">
+      <div id="header-img-div">
+        <a href="main_page.html">
+          <img id="header-img" src="img/logo.png"></img>
+        </a>
     </div>
-    <div id="incorrect-div">
-      <h1 id="incorrect-header">You're an idiot...</h1>
-      <h3 id="message-thing">----</h3>
-      <button onclick="window.location.reload();">Next question</button>
+    <div id="login-div">
+      <p>Welcome, User!</p>
     </div>
+    <div id="subheader">
+      <div id="button-padding"></div>
+      <div id="sub-buttons">
+        <button class="sub-button" type="button" style="color: white" onclick="reloadPage()">Learning</button>
+        <button class="sub-button" type="button" onclick="openError()">Diagnostic</button>
+        <button class="sub-button" type="button" onclick="openError()">Analytics</button>
+      </div>
+    </div>
+      <div id="sub-subheader">
+        <div><button type="button" id="math-button" onclick="reloadPage()"><img id="subsubheader-img1" src="img/math_icon.png"></img></button></div>
+        <div><button type="button" id="recommendations-button" onclick="openError()"><img id="subsubheader-img2" src="img/recommendations_icon.png"></img></button></div>
+      </div>
+      <div id="lesson-title-div">
+        <p style="padding-left: 200px;" class="lesson-title-text"><a class="lesson-title-text" id="lesson-title-link" href="main_page.html">Level A</a>&nbsp&nbsp&nbsp><span style="color: black;">&nbsp&nbsp&nbspA.1 Addition</span>&nbsp&nbsp&nbspVND</p>
+      </div>
+    </div>
+
+    <!-- main -->
+    <div id="main-div">
+      <div id="question-div">
+        <div id="answer-div">
+          <p><span id="num1">-</span> + <span id="num2">-</span> = ?</p>
+          <input id="answer-input" type="text">
+          <br>
+          <br>
+          <button id="submit" onclick="submitAnswer()">Submit</button>
+          <p style="color: white;" id="answer"></p>
+        </div>
+        <div id="stats-div">
+          <div id="questions-answered-top">
+            <p style="padding-top: 5px;">Questions answered</p>
+          </div>
+          <div id="questions-answered-bottom">
+            <h3 id="questions-answered">0</h3>
+          </div>
+        </div>
+      </div>
+      <div id="incorrect-div">
+        <div id="incorrect-div-content">
+          <h1 id="incorrect-header">You're an idiot...</h1>
+          <h3 id="message-thing">----</h3>
+          <button id="next-button" onclick="window.location.reload();">Got it</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/random_header.js"></script>
     <script type="text/javascript" src="js/main_lesson.js"></script>
   </body>
 </html>
