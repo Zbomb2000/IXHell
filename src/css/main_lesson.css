@@ -47,17 +47,24 @@ body {
 }
 
 #questions-answered-top {
-  background-color: #00c8ff;
+  background-color: #8cc713;
   color: white;
   margin-top: -16px;
   height: 50px;
 }
 
-#questions-answered-bottom {
+#smartscore-top {
+  background-color: #e76836;
+  color: white;
+  margin-top: -16px;
+  height: 50px;
+}
+
+#questions-answered-bottom, #smartscore-bottom {
   font-weight: bold;
   color: #777368;
   font-size: 30px;
-  height: 75px;
+  height: 60px;
 }
 
 #incorrect-div {
