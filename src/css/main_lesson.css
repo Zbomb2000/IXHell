@@ -44,6 +44,7 @@ body {
   margin-right: 30px;
   text-align: center;
   font-weight: bold;
+  z-index: 1001;
 }
 
 #questions-answered-top {
