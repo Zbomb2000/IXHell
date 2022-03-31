@@ -8,6 +8,17 @@ IXHell is an exaggerated version of IXL. If you somehow get a question right, it
 This is information about current/future releases of this program. This only has the most recent versions. A full list of versions can be found in 'Updates.md'.
 
 ---
+### VERSION 0.3 [pre-release] (finished, unreleased)
+This version will add a crappy version of SmartScore.
+#### FEATURES:
+ - Same as last release except it has smart score
+
+### VERSION 0.4 [pre-release] (unfinished)
+This version will add a lesson for subtraction.
+#### FEATURES:
+ - Subtraction lesson
+ - Slightly better version of Smart Score
+
 ### VERSION 0.5 [pre-release] (unfinished)
 This version will add IXL's SmartScore and a lesson for subtraction.
 #### FEATURES:
