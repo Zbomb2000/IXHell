@@ -1,5 +1,5 @@
 function randomizeHeader() {
-  var random_var = Math.floor(Math.random() * 12);
+  var random_var = Math.floor(Math.random() * 13);
   if (random_var == 1) {
     return "You're an idiot...";
   } else if (random_var == 0) {
