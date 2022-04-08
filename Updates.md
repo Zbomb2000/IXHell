@@ -2,6 +2,13 @@
 This is a full list of all the updates/releases for IXHell.
 
 ---
+## VERSION 0.3 [pre-release]
+I added a very bad, off brand copy of Smart Score. I'm probably going to have to change the name "Smart Score" to something else so IXL doesn't sue me.
+
+### FEATURES
+ - Crappy version of Smart Score
+
+---
 ## VERSION 0.2 [pre-release]
 This version is the same as version 1, but there's styles for the main lesson and a questions answered counter.
 
