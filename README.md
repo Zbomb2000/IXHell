@@ -8,27 +8,20 @@ IXHell is an exaggerated version of IXL. If you somehow get a question right, it
 This is information about current/future releases of this program. This only has the most recent versions. A full list of versions can be found in 'Updates.md'.
 
 ---
-### VERSION 0.3 [pre-release] (finished, will be released in a few days)
-This version will add a crappy version of SmartScore.
-#### FEATURES:
- - Same as last release except it has smart score
 
 ### VERSION 0.4 [pre-release] (unfinished)
 This version will add a lesson for subtraction.
 #### FEATURES:
  - Subtraction lesson
  - Slightly better version of Smart Score
+ - You can actually get questions right
+
+---
 
 ### VERSION 0.5 [pre-release] (unfinished)
-This version will add IXL's SmartScore and a lesson for subtraction.
+Not sure what I'm going to add here.
 #### FEATURES:
- - Impossible to beat
- - Only one lesson
- - Addition
- - Subtraction
- - SmartScore (I'm not sure if I can call it that for copyright purposes)
- - Styles simalar to actual IXL (The web page for the lesson will look better)
- - You can actually get questions right, but it's extremely rare and based on random chance
+ - ???
 
 ---
 ### VERSION 1 (unfinished)
@@ -36,7 +29,7 @@ This will be the first full release of the program
 #### FEATURES:
  - Really hard
  - Possible to beat (But really hard)
- - Still only one lesson *(Level A - A.1: Your worst nightmare)*
+ - More than two lessons (probably three)
 ---
 
 ## LINKS
