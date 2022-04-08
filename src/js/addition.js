@@ -10,25 +10,25 @@ console.log("It makes it not fun.");
 console.log("That's pretty much it.");
 
 qnum_save = localStorage.getItem("question_num");
-ss_save = localStorage.getItem("smart_score");
+ss_save = localStorage.getItem("ss_addition");
 if (qnum_save == null) {
   localStorage.setItem("question_num", 0);
 }
 if (ss_save == null) {
-  localStorage.setItem("smart_score", 0);
+  localStorage.setItem("ss_addition", 0);
 }
 
 function removePoints() {
-    var num1 = Math.floor(Math.random() * 5000);
+  var num1 = Math.floor(Math.random() * 5000);
   var smart_score_html = document.getElementById("SmartScore");
-  var smart_score = localStorage.getItem("smart_score");
+  var smart_score = localStorage.getItem("ss_addition");
 
   num2 = smart_score - num1;
   console.log(smart_score);
   console.log(num1);
   console.log(num2);
   smart_score_html.innerHTML = num2;
-  localStorage.setItem("smart_score", num2);
+  localStorage.setItem("ss_addition", num2);
 }
 
 function setQuestion(question_number, smart_score) {
@@ -76,5 +76,5 @@ input.addEventListener("keyup", function(event) {
 });
 
 
-setQuestion(localStorage.getItem("question_num"), localStorage.getItem('smart_score'));
+setQuestion(localStorage.getItem("question_num"), localStorage.getItem('ss_addition'));
 document.getElementById("body").style.display = "inline";
