@@ -19,7 +19,7 @@ if (ss_save == null) {
 }
 
 function removePoints() {
-    var num1 = Math.floor(Math.random() * 5000);
+  var num1 = Math.floor(Math.random() * 5000);
   var smart_score_html = document.getElementById("SmartScore");
   var smart_score = localStorage.getItem("ss_subtraction");
 
@@ -32,10 +32,10 @@ function removePoints() {
 }
 
 function setQuestion(question_number, smart_score) {
-  var num1 = Math.floor(Math.random() * 11);
-  var num2 = Math.floor(Math.random() * 11);
-  while (num2 > num1) {
-    num2 = Math.floor(Math.random() * 11);
+  var num1 = Math.floor(Math.random() * 21);
+  var num2 = Math.floor(Math.random() * 21);
+  while (num2 >= num1) {
+    num2 = Math.floor(Math.random() * 21);
   }
   var answer = num1 - num2;
 
@@ -54,7 +54,7 @@ function submitAnswer() {
 
   document.getElementById("incorrect-header").innerHTML = randomizeHeader();
   if (user_answer == answer) {
-    incorrect_text.innerHTML = "The correct answer was '"+(parseInt(answer)+1)+"'. You answered '"+user_answer+"'.";
+    incorrect_text.innerHTML = "The correct answer was '"+(parseInt(answer)-1)+"'. You answered '"+user_answer+"'.";
   }
   else {
     incorrect_text.innerHTML = "The correct answer was '"+answer+"'. You answered '"+user_answer+"'.";
