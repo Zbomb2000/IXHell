@@ -9,13 +9,20 @@ console.log("I recommend not using the console to cheat.");
 console.log("It makes it not fun.");
 console.log("That's pretty much it.");
 
-qnum_save = localStorage.getItem("question_num");
+qnum_save = localStorage.getItem("question_num_add");
 ss_save = localStorage.getItem("ss_addition");
 if (qnum_save == null) {
-  localStorage.setItem("question_num", 0);
+  localStorage.setItem("question_num_add", 0);
 }
 if (ss_save == null) {
   localStorage.setItem("ss_addition", 0);
+}
+
+function onOpen() {
+  var questions_answered = localStorage.getItem("question_num_add");
+  if (questions_answered > 0) {
+    document.getElementById("tutorial-div").style.visibility = "hidden";
+  }
 }
 
 function removePoints() {
@@ -49,6 +56,7 @@ function submitAnswer() {
   var incorrect_text = document.getElementById("message-thing");
   var frame2 = document.getElementById("incorrect-div");
 
+  document.getElementById("tutorial-div").style.visibility = "hidden";
   document.getElementById("incorrect-header").innerHTML = randomizeHeader();
   if (user_answer == answer) {
     incorrect_text.innerHTML = "The correct answer was '"+(parseInt(answer)+1)+"'. You answered '"+user_answer+"'.";
@@ -60,9 +68,9 @@ function submitAnswer() {
 
   removePoints();
 
-  question_number = localStorage.getItem("question_num");
+  question_number = localStorage.getItem("question_num_add");
   question_number = parseInt(question_number) + 1;
-  localStorage.setItem('question_num', question_number);
+  localStorage.setItem("question_num_add", question_number);
   document.getElementById('submit').disabled = "disabled";
 }
 
@@ -76,5 +84,6 @@ input.addEventListener("keyup", function(event) {
 });
 
 
-setQuestion(localStorage.getItem("question_num"), localStorage.getItem('ss_addition'));
+setQuestion(localStorage.getItem("question_num_add"), localStorage.getItem('ss_addition'));
 document.getElementById("body").style.display = "inline";
+onOpen();
