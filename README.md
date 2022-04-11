@@ -1,6 +1,3 @@
-### ⚠ DISCLAIMER ⚠
-This project has nothing to do with ANTIxl. That project has been cancelled and this is something completley different.
-
 # IXHell
 IXHell is an exaggerated version of IXL. If you somehow get a question right, it will find a dumb way to count it wrong. If you get a question wrong, you will have to answer about 10 more questions to get back to where you were. There isn't really any difference between this and IXL. That's pretty much it.
 
