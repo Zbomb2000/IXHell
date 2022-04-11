@@ -7,6 +7,8 @@ I added a very bad, off brand copy of Smart Score. I'm probably going to have to
 
 ### FEATURES
  - Crappy version of Smart Score
+ 
+**Note:** I forgot to update the version description on the main page, so it still says you are using version 0.2.
 
 ---
 ## VERSION 0.2 [pre-release]
