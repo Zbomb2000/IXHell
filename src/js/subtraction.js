@@ -9,10 +9,10 @@ console.log("I recommend not using the console to cheat.");
 console.log("It makes it not fun.");
 console.log("That's pretty much it.");
 
-qnum_save = localStorage.getItem("question_num");
+qnum_save = localStorage.getItem("question_num_sub");
 ss_save = localStorage.getItem("ss_subtraction");
 if (qnum_save == null) {
-  localStorage.setItem("question_num", 0);
+  localStorage.setItem("question_num_sub", 0);
 }
 if (ss_save == null) {
   localStorage.setItem("ss_subtraction", 0);
@@ -63,9 +63,9 @@ function submitAnswer() {
 
   removePoints();
 
-  question_number = localStorage.getItem("question_num");
+  question_number = localStorage.getItem("question_num_sub");
   question_number = parseInt(question_number) + 1;
-  localStorage.setItem('question_num', question_number);
+  localStorage.setItem("question_num_sub", question_number);
   document.getElementById('submit').disabled = "disabled";
 }
 
@@ -79,5 +79,5 @@ input.addEventListener("keyup", function(event) {
 });
 
 
-setQuestion(localStorage.getItem("question_num"), localStorage.getItem("ss_subtraction"));
+setQuestion(localStorage.getItem("question_num_sub"), localStorage.getItem("ss_subtraction"));
 document.getElementById("body").style.display = "inline";
