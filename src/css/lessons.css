@@ -9,6 +9,16 @@ body {
   z-index: 1000;
 }
 
+#tutorial-div {
+  position: relative;
+  z-index: 100;
+}
+
+#tutorial-link {
+  color: #b8b8b8;
+  font: 15px Verdana, sans-serif;
+}
+
 #main-div {
   position: absolute;
   top: 0;
