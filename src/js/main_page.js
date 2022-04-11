@@ -4,7 +4,7 @@ function onOpen() {
     cover_opacity -= .05;
     setTimeout(function() {
       onOpen()
-    }, 75);
+    }, 0);
   }
   document.getElementById('cover').style.opacity = cover_opacity;
   if (cover_opacity < 0) {
