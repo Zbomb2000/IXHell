@@ -74,6 +74,12 @@ function submitAnswer() {
   document.getElementById('submit').disabled = "disabled";
 }
 
+function resetPageData() {
+  localStorage.setItem("ss_addition", 0);
+  localStorage.setItem("question_num_add", 0);
+  window.location.reload();
+}
+
 // Click submit when enter is clicked
 var input = document.getElementById("answer-input");
 input.addEventListener("keyup", function(event) {
