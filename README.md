@@ -12,6 +12,7 @@ This version will add a lesson for subtraction.
  - Subtraction lesson
  - Slightly better version of Smart Score
  - You can actually get questions right
+ - Video tutorials!
 
 ---
 
