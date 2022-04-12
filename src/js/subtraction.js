@@ -31,6 +31,13 @@ function removePoints() {
   localStorage.setItem("ss_subtraction", num2);
 }
 
+function onOpen() {
+  var questions_answered = localStorage.getItem("question_num_sub");
+  if (questions_answered > 0) {
+    document.getElementById("tutorial-div").style.visibility = "hidden";
+  }
+}
+
 function setQuestion(question_number, smart_score) {
   var num1 = Math.floor(Math.random() * 21);
   var num2 = Math.floor(Math.random() * 21);
@@ -51,6 +58,7 @@ function submitAnswer() {
   var user_answer = document.getElementById("answer-input").value;
   var incorrect_text = document.getElementById("message-thing");
   var frame2 = document.getElementById("incorrect-div");
+  document.getElementById("tutorial-div").style.visibility = "hidden";
 
   document.getElementById("incorrect-header").innerHTML = randomizeHeader();
   if (user_answer == answer) {
@@ -87,3 +95,4 @@ input.addEventListener("keyup", function(event) {
 
 setQuestion(localStorage.getItem("question_num_sub"), localStorage.getItem("ss_subtraction"));
 document.getElementById("body").style.display = "inline";
+onOpen();
