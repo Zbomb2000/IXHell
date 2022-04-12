@@ -69,6 +69,12 @@ function submitAnswer() {
   document.getElementById('submit').disabled = "disabled";
 }
 
+function resetPageData() {
+  localStorage.setItem("ss_subtraction", 0);
+  localStorage.setItem("question_num_sub", 0);
+  window.location.reload();
+}
+
 // Click submit when enter is clicked
 var input = document.getElementById("answer-input");
 input.addEventListener("keyup", function(event) {
