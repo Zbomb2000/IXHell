@@ -40,4 +40,4 @@ This will be the first full release of the program
  - goodergames website - https://goodergames.github.io
 
 ## CONTACT INFORMATION
-You can email me at hxl9500@gmail.com. (That's pretty much it.)
+You can email me at hxl9500@gmail.com or antixlbot@gmail.com. (That's pretty much it.)
