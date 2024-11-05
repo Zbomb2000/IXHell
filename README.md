@@ -1,5 +1,5 @@
 **NOTICE**:
-You can use the program at https://gooderprojects.github.io/other/IXHell ;)<br>I haven't worked on this in a while and probably won't update it that much, but if anybody feels like contributing I'd love to help!
+You can use the program at [https://gooderprojects.github.io/other/IXHell](https://gooderprojects.github.io/ixhell/) <br>I haven't worked on this in a while and probably won't update it.
 
 # IXHell
 ![IXHell](src/img/logo.png "IXHell")
